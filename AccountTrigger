@@ -1,0 +1,5 @@
+Trigger AccTrigger on Account(After Insert){
+if(Trigger.isInsert && Trigger.isInsert)(
+    AccTriggerHandler.updateAccounts(Trigger.new);
+)
+}
